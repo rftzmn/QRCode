@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="app"
+      class="grid grid-cols-1 justify-items-center content-center gap-4 h-96 pt-32"
+    >
+      <input
+        id="width"
+        type="text"
+        placeholder="Width"
+        class="input input-bordered input-success w-full max-w-xs"
+      />
+      <input
+        id="height"
+        type="text"
+        placeholder="Height"
+        class="input input-bordered input-success w-full max-w-xs"
+      />
+      <input
+        id="qrText"
+        type="text"
+        placeholder="QR Text"
+        class="input input-bordered input-success w-full max-w-xs"
+      />
+      <button
+        id="generateQrButton"
+        class="btn btn-outline btn-error w-full max-w-xs"
+      >
+        Generate
+      </button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
